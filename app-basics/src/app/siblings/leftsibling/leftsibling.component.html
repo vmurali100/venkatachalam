@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">tel</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of allUsers" (click)="selectUser(user)">
+      <td>{{user.fname}}</td>
+      <td>{{user.lname}}</td>
+      <td>{{user.tel}}</td>
+      <td>{{user.address}}</td>
+    </tr>
+  </tbody>
+</table>
