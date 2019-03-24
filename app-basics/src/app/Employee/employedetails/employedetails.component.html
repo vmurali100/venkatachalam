@@ -1,0 +1,8 @@
+
+ <h2 *ngIf="sUser">Selected User is : {{sUser.fname}}</h2>
+
+
+<hr>
+<br>
+
+<app-employelist (sendInfo)="receiveInfo($event)"></app-employelist>
