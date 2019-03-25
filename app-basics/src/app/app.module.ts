@@ -8,6 +8,9 @@ import { EmployelistComponent } from './Employee/employelist/employelist.compone
 import { SiblingsComponent } from './siblings/siblings.component';
 import { LeftsiblingComponent } from './siblings/leftsibling/leftsibling.component';
 import { RightsiblingComponent } from './siblings/rightsibling/rightsibling.component';
+import { HttpservComponent } from './Services/httpserv/httpserv.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { RightsiblingComponent } from './siblings/rightsibling/rightsibling.comp
     EmployelistComponent,
     SiblingsComponent,
     LeftsiblingComponent,
-    RightsiblingComponent
+    RightsiblingComponent,
+    HttpservComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
